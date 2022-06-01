@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Projeto Clone do Netflix com ReactJS :smiley: :computer:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fiz esse projeto com video aula no youtube para entender da biblioteca ReactJS
+e ter expêriencia e entende um pouco sobre a tecnologia.
+<br/>
+Entender sobre o que é componentes e como funciona os componentes e sobre os Hooks - useState e useEffect.
 
-## Available Scripts
+## Componentes o que entendi.
 
-In the project directory, you can run:
+Em react componentes é como se fossem funções em javascript em que elas têm determiados trechos de códigos que façam alguma funcinalidade em que pode está retornando algumas tags HTML, em que aceitam um propriedade chamada 'props' e retornam um elemento React, JSX .
+<br/>
+<pre>
+    Ex.: function Element(props) {
+        return(
+            &lt;div&gt;
+                 &lt;h2&gt; {props.title} &lt;/h2&gt;
+            &lt;/div&gt; 
+        );
+    }
 
-### `npm start`
+    Ex.: export default () => {
+        return(
+            elementos html 
+            &lt;div&gt; 
+                &lt;Element title="Olá, mundo" /&gt; &lt;- Retorna a tag h2 com Olá, mundo
+            &lt;/div&gt;
+        );
+    }
+</pre>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## useState o que entendi.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O useState e usado para acaso queira está modificando algum valor variavel, em que posso esta criando uma constante com uma desestruturação com nome de uma variavel e um nome de uma função, que vai servir para modificar o valor desta variavel, e posso está atribuindo um valor inicial para esta variavel.
+<br/>
+<pre>
+    Ex.: const [nome,setNome] = useState('nando');
+</pre>
 
-### `npm test`
+## useEffect o que entendi.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O useEffect ele e chamado depois da atualização do DOM eu posso está usando para esta modificando alguma valor ou fazer busca de dados, buscar uma dados de uma API, posso está criando funções dos tipos assíncronas e síncronas posso alterar o valor de um useState.
+<br/>
+Essa função recebe dois parâmentros o primeiro é uma função e a segunda um array, nesse array caso eu passar alguma variavel por exemplo " nome " todas vez que esse variavel sofrer alguma alteração useEffect sera executado, e posso também não passar nenhum valor no array e useEffect executara somente uma vez.
+<br/>
+<pre>
+    Ex.: useEffect( ()=> {
+        // código
+    }, []);
+</pre>
 
-### `npm run build`
+## O que foi usado no projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - API de filmes do Themoviedb.org
+ - ReactJs
+ - React icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Por acaso você programador queira fazer o projeto do zero
+:bulb: vídeo do Youtube: [Clone Netflix](https://www.youtube.com/watch?v=tBweoUiMsDg&ab_channel=BoniekyLacerda)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
